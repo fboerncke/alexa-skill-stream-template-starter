@@ -1,0 +1,179 @@
+{
+  "manifest": {
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "XXX"
+        },
+        "interfaces": [
+          {
+            "supportedViewports": [
+              {
+                "maxHeight": 540,
+                "maxWidth": 960,
+                "minHeight": 540,
+                "minWidth": 960,
+                "mode": "TV",
+                "shape": "RECTANGLE"
+              },
+              {
+                "maxHeight": 480,
+                "maxWidth": 480,
+                "minHeight": 480,
+                "minWidth": 480,
+                "mode": "HUB",
+                "shape": "ROUND"
+              },
+              {
+                "maxHeight": 600,
+                "maxWidth": 1024,
+                "minHeight": 600,
+                "minWidth": 1024,
+                "mode": "HUB",
+                "shape": "RECTANGLE"
+              },
+              {
+                "maxHeight": 800,
+                "maxWidth": 1280,
+                "minHeight": 800,
+                "minWidth": 1280,
+                "mode": "HUB",
+                "shape": "RECTANGLE"
+              },
+              {
+                "maxHeight": 480,
+                "maxWidth": 960,
+                "minHeight": 480,
+                "minWidth": 960,
+                "mode": "HUB",
+                "shape": "RECTANGLE"
+              }
+            ],
+            "type": "ALEXA_PRESENTATION_APL"
+          }
+        ],
+        "regions": {
+          "NA": {
+            "endpoint": {
+              "uri": "XXX"
+            }
+          },
+          "EU": {
+            "endpoint": {
+              "uri": "XXX"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "XXX"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "containsAds": false,
+      "isChildDirected": false,
+      "isExportCompliant": true,
+      "locales": {
+        "en-US": {
+          "privacyPolicyUrl": ""
+        },
+        "en-GB": {
+          "privacyPolicyUrl": ""
+        },
+        "en-CA": {
+          "privacyPolicyUrl": ""
+        },
+        "en-AU": {
+          "privacyPolicyUrl": ""
+        },
+        "en-IN": {
+          "privacyPolicyUrl": ""
+        },
+        "de-DE": {
+          "privacyPolicyUrl": ""
+        }
+      },
+      "usesPersonalInfo": false
+    },
+    "publishingInformation": {
+      "automaticDistribution": {
+        "isActive": false
+      },
+      "category": "NEWS",
+      "distributionCountries": [],
+      "isAvailableWorldwide": true,
+      "locales": {
+        "de-DE": {
+          "description": "Dieser Skill ist ein Beispiel dafür, wie man eigene Skills bauen kann, um Live Streams auf einem Echo Show mit Browser anzusehen.",
+          "examplePhrases": [
+            "Alexa, starte News Flash",
+            "Alexa öffne News Flash"
+          ],
+          "keywords": [],
+          "name": "Live Streams ansehen (template)",
+          "summary": "Dieser Skill ist ein Beispiel dafür, wie man eigene Skills bauen kann, um YouTube Live Streams auf einem Echo Show mit Browser anzusehen."
+        },
+        "en-US": {
+          "description": "This skill is a template which will help you to build your own skill to watch Live Streams on your Echo Show devices within a browser environment.",
+          "examplePhrases": [
+            "Alexa, open News Flash",
+            "Alexa start News Flash",
+            "Alexa launch News Flash"
+          ],
+          "keywords": [],
+          "name": "Watch your favourite live streams (template)",
+          "summary": "This skill is a template which will help you to build your own skill to watch Live Streams on your Echo Show devices within a browser environment."
+        },
+        "en-CA": {
+          "description": "This skill is a template which will help you to build your own skill to watch Live Streams on your Echo Show devices within a browser environment.",
+          "examplePhrases": [
+            "Alexa, open News Flash",
+            "Alexa start News Flash",
+            "Alexa launch News Flash"
+          ],
+          "keywords": [],
+          "name": "Watch your favourite live streams (template)",
+          "summary": "This skill is a template which will help you to build your own skill to watch Live Streams on your Echo Show devices within a browser environment."
+        },
+        "en-IN": {
+          "description": "This skill is a template which will help you to build your own skill to watch Live Streams on your Echo Show devices within a browser environment.",
+          "examplePhrases": [
+            "Alexa, open News Flash",
+            "Alexa start News Flash",
+            "Alexa launch News Flash"
+          ],
+          "keywords": [],
+          "name": "Watch your favourite live streams (template)",
+          "summary": "This skill is a template which will help you to build your own skill to watch Live Streams on your Echo Show devices within a browser environment."
+        },
+        "en-AU": {
+          "description": "This skill is a template which will help you to build your own skill to watch Live Streams on your Echo Show devices within a browser environment.",
+          "examplePhrases": [
+            "Alexa, open News Flash",
+            "Alexa start News Flash",
+            "Alexa launch News Flash"
+          ],
+          "keywords": [],
+          "name": "Watch your favourite live streams (template)",
+          "summary": "This skill is a template which will help you to build your own skill to watch Live Streams on your Echo Show devices within a browser environment."
+        },
+        "en-GB": {
+          "description": "This skill is a template which will help you to build your own skill to watch Live Streams on your Echo Show devices within a browser environment.",
+          "examplePhrases": [
+            "Alexa, open News Flash",
+            "Alexa start News Flash",
+            "Alexa launch News Flash"
+          ],
+          "keywords": [],
+          "name": "Watch your favourite live streams (template)",
+          "summary": "This skill is a template which will help you to build your own skill to watch Live Streams on your Echo Show devices within a browser environment."
+        }
+      },
+      "testingInstructions": "APL and browser support required."
+    }
+  }
+}

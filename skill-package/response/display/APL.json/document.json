@@ -1,0 +1,101 @@
+{
+  "type": "APL",
+  "version": "1.4",
+  "settings": {},
+  "theme": "dark",
+  "import": [
+    {
+      "name": "alexa-layouts",
+      "version": "1.1.0"
+    },
+    {
+      "name": "alexa-viewport-profiles",
+      "version": "1.1.0"
+    }
+  ],
+  "resources": [],
+  "styles": {},
+  "onMount": [
+    {
+      "type": "Finish",
+      "when": "${@viewportProfile == @hubRoundSmall}",
+      "delay": 6000
+    },
+    {
+      "type": "Parallel",
+      "when": "${1==1}",
+      "delay": 0,
+      "commands": [
+        {
+          "type": "OpenURL",
+          "TVPsourceExample": "http://tvpstream.tvp.pl/sess/tvplayer.php?object_id=14812849",
+          "CNNsourceExample": "https://livenewstime.com/headlines/",
+          "source": "https://livenewstime.com/headlines/"
+        },
+        {
+          "type": "Idle",
+          "delay": 6000000
+        }
+      ]
+    }
+  ],
+  "graphics": {},
+  "commands": {},
+  "layouts": {},
+  "mainTemplate": {
+    "parameters": ["payload"],
+    "items": [
+      {
+        "type": "Text",
+        "when": "${@viewportProfile == @hubRoundSmall}",
+        "width": "100vw",
+        "height": "100vh",
+        "color": "orange",
+        "text": "${payload.documentData.properties.browserSupportText}",
+        "fontSize": "32dp",
+        "textAlign": "center",
+        "textAlignVertical": "center"
+      },
+      {
+        "type": "Container",
+        "when": "${@viewportProfile != @hubRoundSmall}",
+        "width": "100vw",
+        "height": "100vh",
+        "items": [
+          {
+            "type": "AlexaBackground",
+            "backgroundColor": "#457B9D"
+          },
+          {
+            "type": "Text",
+            "width": "90vw",
+            "height": "20vh",
+            "color": "white",
+            "text": "${payload.documentData.properties.title}",
+            "fontSize": "50dp",
+            "textAlign": "center",
+            "textAlignVertical": "center"
+          },
+          {
+            "type": "Container",
+            "width": "100vw",
+            "height": "30vh",
+            "direction": "row",
+            "items": [
+              {
+                "type": "Text",
+                "width": "100vw",
+                "height": "15vh",
+                "color": "darkgray",
+                "text": "wait ...",
+                "fontSize": "32dp",
+                "textAlign": "center",
+                "textAlignVertical": "bottom"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
